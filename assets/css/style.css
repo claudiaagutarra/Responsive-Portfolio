@@ -39,7 +39,7 @@ h3 {
 }
 
 h1 {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #dddddd;
@@ -232,22 +232,40 @@ input[type=submit] {
   #masthead {
     overflow: hidden;
   }
+  .hcontainer {
+    width: 100%;
+    max-width: 910px;
+    margin: 0 auto;
+    clear: both;
+  }
   .container {
     width: 730px;
     margin-left: 30px;
   }
+  .work {
+    width: 47%;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {
-   .work {
-        position: relative;
-        float: left;
-        width: 100%;
-        height: 350px;
-        margin: 20px 0 25px;
-        overflow: hidden;
+  .hcontainer {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    clear: both;
+  }
+  .container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    clear: both;
+  }
+  .work {
+  width: 46.7%;
+  overflow: hidden;
       }
-      }
+    }
 
 @media (max-width: 640px) {
   #masthead {
@@ -270,7 +288,7 @@ input[type=submit] {
         clear: both;
       }
       #main-container {
-        padding-top: 20px;
+        padding-top: 10px;
        
       }
       .auth-image {
