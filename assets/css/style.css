@@ -51,7 +51,12 @@ h3 {
 }
 
 /* header */
-
+.hcontainer {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
 #masthead {
   position: fixed;
   z-index: 99;
@@ -61,8 +66,6 @@ h3 {
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
-  margin: 0 auto;
-  clear: both;
 }
 
 #logo {
@@ -226,14 +229,24 @@ input[type=submit] {
 
 @media (max-width: 980px) {
 
-
   #masthead {
     overflow: hidden;
+  }
+  .container {
+    width: 730px;
+    margin-left: 30px;
   }
 }
 
 @media (max-width: 768px) {
-
+   .work {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 350px;
+        margin: 20px 0 25px;
+        overflow: hidden;
+      }
       }
 
 @media (max-width: 640px) {
