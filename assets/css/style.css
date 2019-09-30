@@ -61,7 +61,8 @@ h3 {
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
-  
+  margin: 0 auto;
+  clear: both;
 }
 
 #logo {
@@ -76,7 +77,6 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
-  margin-top: 0;
 
   
 }
@@ -225,6 +225,11 @@ input[type=submit] {
 /* Media Queries! */
 
 @media (max-width: 980px) {
+
+
+  #masthead {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {
@@ -232,7 +237,44 @@ input[type=submit] {
       }
 
 @media (max-width: 640px) {
-      .header {
-          position: static;
+  #masthead {
+    position: static;
+  }
+      #logo {
+        float:left;
+        width: 100%;
       }
-}
+      nav {
+        clear: auto;
+        margin-right:30%;
+        margin-top:12px;
+        margin-bottom:12px;
+      }
+      .container {
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+        clear: both;
+      }
+      #main-container {
+        padding-top: 20px;
+       
+      }
+      .auth-image {
+        width: 100%;
+        padding-bottom: 25px;
+      }
+
+      .work {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 350px;
+        margin: 20px 0 25px;
+        overflow: hidden;
+      }
+
+      .work h3 {
+       font-size: 24px;
+      }
+    }
